@@ -1,0 +1,48 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+     
+     //const request
+     
+     //Basic auntentication
+     const encoded = btoa('jhernandez98@outlook.es:jya300591');
+
+     fetch('https://api.github.com/user/repos',{
+
+     headers:{
+         Authorization:`Basic ${encoded}`
+     }
+     });
+
+     fetch('https://api.github.com/user/repos',
+     {
+         headers:{
+             Authorization:`Basic ${encoded}`
+         }
+     })
+
+     //Authenticating with OAuth
+     const encoded2 = '45af35071ec4a7a9773ef4a19a08df57087496cf';
+
+        fetch("https://api.github.com/user/repos",
+        {
+            headers:
+            {
+                Authorization:`Bearer ${encoded2}`
+            }
+        })
+     
+
+
+
+    </script>
+
+</body>
+
+</html>
